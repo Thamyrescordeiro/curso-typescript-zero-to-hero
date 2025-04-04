@@ -7,45 +7,40 @@
  * Transpilação do arquivo: <Windows> CTRL + SHIFT + B -> tsc: build/watch
  */
 
-// ==> Exemplo 01 - Uso de Colchetes:
+// // ==> Exemplo 01 - Uso de Colchetes:
 
-let frutas: string[] = ['🍍', '🍊', '🍎', '🍉', '🥭'];
-console.log(frutas[2]);
+ let frutas: string[] = ['🍍', '🍊', '🍎', '🍉', '🥭'];
+ console.log(frutas[2]);
 
-// ==> Exemplo 02 - Array Object (Objeto Array):
+// // ==> Exemplo 02 - Array Object (Objeto Array):
 
-let frutas1: Array<string> = ['🍍', '🍊', '🍎', '🍉', '🥭'];
-console.log(frutas1[3]);
+ let frutas1 : Array<string> = ['🍍', '🍊', '🍎', '🍉', '🥭'];
+ console.log(frutas1[2]);
+// // ==> Exemplo 03 - Adicionando mais strings com método 'push'
 
-// ==> Exemplo 03 - Adicionando mais strings com método 'push'
+ let indiomas : Array<string> = ['Português', 'Mandarim', 'Espanhol'];
+ console.log(indiomas);
+ indiomas.push('Francês');
+ console.log(indiomas);
 
-let idiomas: Array<string> = ['Português', 'Inglês', 'Espanhol', 'Francês'];
-console.log(idiomas);
-idiomas.push('Mandarim');
-console.log(idiomas);
-idiomas.push('Italiano');
-console.log(idiomas);
+// // ==> Exemplo 04 - Identificar tamanho do array - método 'length'
+ let indiomas1 : Array<string> = ['Português', 'Mandarim', 'Espanhol'];
+ console.log(indiomas1.length);
 
-// ==> Exemplo 04 - Identificar tamanho do array - método 'length'
+// // ==> Exemplo 05 - Exemplo de Array com Spread Operator
 
-let idiomas1: Array<string> = ['Português', 'Inglês', 'Espanhol', 'Francês'];
-console.log(idiomas1.length);
+let listanumeros = [1,2,3,4,5];
+listanumeros = [...listanumeros,6,7,8,9,10];
+console.log(listanumeros);
 
-// ==> Exemplo 05 - Exemplo de Array com Spread Operator
+// // ==> Exemplo 06 - Exemplo de Array com laço de iteração
 
-let listaNumeros = [0, 1, 2, 3, 4, 5];
-listaNumeros = [...listaNumeros, 6, 7, 8, 9, 10];
+ let linguagensArray: String[] = new Array('JavaScript','Python','PHP','C#');
 
-console.log(listaNumeros);
-
-// ==> Exemplo 06 - Exemplo de Array com laço de iteração
-
-let linguagensArray:string[] = new Array('JavaScript', 'Python', 'PHP', 'C#');
-
-function funcaoLinguagens(linguagens:string[]) {
-    for (let i = 0; i < linguagens.length; i++) {
-        console.log(linguagensArray[i]); 
+ function funcaoLinguagens(linguagens:String[]){
+    for (let i = 0 ; i < linguagens.length ; i++) {
+        console.log (linguagensArray[i]);
+        
     }
-}
-
-funcaoLinguagens(linguagensArray);
+ }
+ funcaoLinguagens(linguagensArray);

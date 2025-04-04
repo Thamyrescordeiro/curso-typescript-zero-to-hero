@@ -9,8 +9,9 @@
 
 // ==> Exemplo 01 - Uso simples de Tuplas em TypeScript
 
-let pessoa: [string, string, number];
-pessoa = ['Glaucia Lemos', 'Cloud Advocate JavaScript', 34];
+let pessoa : [string,string,number];
+pessoa = ['Thamyres','Cordeiro',21];
+console.log(pessoa);
 // pessoa = [34, 'Cloud Advocate JavaScript', 'Glaucia Lemos'];
 
 console.log(pessoa);
